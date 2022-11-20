@@ -26,7 +26,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   Widget build(BuildContext context) {
-    final Controller controller = Get.put(Controller());
+    // final Controller controller = Get.put(Controller());
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -80,6 +80,14 @@ class _ProfilePageState extends State<ProfilePage> {
                           size: 14,
                           color: Colors.black,
                         ),
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Image.asset("asset/flutter.png"),
+                              Image.asset("asset/laravel.png"),
+                              Image.asset("asset/node-js.png"),
+                              Image.asset("asset/react.png")
+                            ]),
                         BodyText(
                           text: "About me",
                           fontWeight: FontWeight.normal,
