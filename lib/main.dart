@@ -1,7 +1,5 @@
-import 'package:coding_test/screens/test.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'screens/home.dart';
 
 void main() {
@@ -20,8 +18,6 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: HomePage(),
-
-      // home: TestPage(),
     );
   }
 }

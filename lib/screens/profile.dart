@@ -1,7 +1,4 @@
-import 'package:coding_test/controller/controller.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
 import '../widget/body_text.dart';
 
 class ProfilePage extends StatefulWidget {

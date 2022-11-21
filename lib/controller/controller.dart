@@ -10,6 +10,7 @@ class Controller extends GetxController {
     fetchList();
   }
 
+
   void fetchList() async {
     await Future.delayed(Duration(seconds: 1));
     var results = [

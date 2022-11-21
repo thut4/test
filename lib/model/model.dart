@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-
 class List {
   String name;
   String type;

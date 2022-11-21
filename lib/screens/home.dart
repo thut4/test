@@ -24,10 +24,11 @@ class _HomePageState extends State<HomePage> {
         actions: [
           InkWell(
             onTap: () {
-              Get.to(() => ProfilePage(), transition: Transition.fadeIn);
+              Get.to(() => ProfilePage(),
+                  transition: Transition.circularReveal);
             },
-            child: CircleAvatar(
-              backgroundColor: Colors.white,
+            child: const CircleAvatar(
+              backgroundImage: AssetImage("asset/profile.jpg"),
             ),
           ),
         ],
@@ -45,14 +46,14 @@ class _HomePageState extends State<HomePage> {
               height: 50,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: 4,
+                  itemCount: controller.list.length,
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 16, vertical: 8),
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: const Text("Data"),
+                        child: Text(controller.list[index].type),
                       ),
                     );
                   }),
